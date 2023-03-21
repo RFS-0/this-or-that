@@ -10,12 +10,7 @@ const ButtonCell: Component<ButtonCellProps> = (props) => {
   return (
     <td
       id={props.id}
-      class='mt-1
-             block
-             w-full
-             rounded-md
-             border-transparent
-            '
+      class='p-f6'
     >
       <ButtonContainer>{props.children}</ButtonContainer>
     </td>

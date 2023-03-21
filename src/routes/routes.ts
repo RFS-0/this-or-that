@@ -4,12 +4,16 @@ import { lazy } from 'solid-js'
 const routes: RouteDefinition[] = [
   {
     path: '/import',
-    component: lazy(() => import('../pages/Import')),
+    component: lazy(() => import('../pages/ImportItems')),
   },
   {
-    path: '/this-or-that',
-    component: lazy(() => import('../pages/ThisOrThat')),
-  }
+    path: '/prioritize',
+    component: lazy(() => import('../pages/PrioritizeItems')),
+  },
+  {
+    path: '/export',
+    component: lazy(() => import('../pages/ExportPrioritizedItems')),
+  },
 ]
 
 export { routes }

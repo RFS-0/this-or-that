@@ -1,0 +1,200 @@
+.base-radio {
+    --md-ripple-hover-state-layer-color: var(--md-radio-unselected-hover-state-layer-color, var(--md-sys-color-on-surface, #1c1b1f));
+    --md-ripple-focus-state-layer-color: var(--md-radio-unselected-focus-state-layer-color, var(--md-sys-color-on-surface, #1c1b1f));
+    --md-ripple-pressed-state-layer-color: var(--md-radio-unselected-pressed-state-layer-color, var(--md-sys-color-primary, #6750a4));
+    --md-ripple-hover-state-layer-opacity: var(--md-radio-unselected-hover-state-layer-opacity, 0.08);
+    --md-ripple-focus-state-layer-opacity: var(--md-radio-unselected-focus-state-layer-opacity, 0.12);
+    --md-ripple-pressed-state-layer-opacity: var(--md-radio-unselected-pressed-state-layer-opacity, 0.12);
+    --md-focus-ring-offset-vertical: -2px;
+    --md-focus-ring-offset-horizontal: -2px;
+    display: inline-flex
+}
+
+.md3-radio {
+    block-size: var(--md-radio-state-layer-size, 40px);
+    inline-size: var(--md-radio-state-layer-size, 40px)
+}
+
+.md3-radio .md3-radio__native-control:disabled:checked+.md3-radio__background .md3-radio__outer-circle {
+    border-color: var(--md-radio-disabled-selected-icon-color, var(--md-sys-color-on-surface, #1c1b1f))
+}
+
+.md3-radio .md3-radio__native-control:disabled+.md3-radio__background .md3-radio__inner-circle {
+    background-color: var(--md-radio-disabled-selected-icon-color, var(--md-sys-color-on-surface, #1c1b1f))
+}
+
+.md3-radio .md3-radio__native-control:disabled:checked+.md3-radio__background .md3-radio__outer-circle {
+    opacity: var(--md-radio-disabled-selected-icon-opacity, 0.38)
+}
+
+.md3-radio .md3-radio__native-control:disabled+.md3-radio__background .md3-radio__inner-circle {
+    opacity: var(--md-radio-disabled-selected-icon-opacity, 0.38)
+}
+
+.md3-radio .md3-radio__native-control:disabled:not(:checked)+.md3-radio__background .md3-radio__outer-circle {
+    border-color: var(--md-radio-disabled-unselected-icon-color, var(--md-sys-color-on-surface, #1c1b1f))
+}
+
+.md3-radio .md3-radio__native-control:disabled:not(:checked)+.md3-radio__background .md3-radio__outer-circle {
+    opacity: var(--md-radio-disabled-unselected-icon-opacity, 0.38)
+}
+
+.md3-radio .md3-radio__background {
+    height: var(--md-radio-icon-size, 20px);
+    width: var(--md-radio-icon-size, 20px)
+}
+
+.md3-radio .md3-radio__native-control:enabled:checked:focus+.md3-radio__background .md3-radio__outer-circle {
+    border-color: var(--md-radio-selected-focus-icon-color, var(--md-sys-color-primary, #6750a4))
+}
+
+.md3-radio .md3-radio__native-control:enabled:checked:focus+.md3-radio__background .md3-radio__inner-circle {
+    background-color: var(--md-radio-selected-focus-icon-color, var(--md-sys-color-primary, #6750a4))
+}
+
+.md3-radio .md3-radio__native-control:enabled:checked:hover+.md3-radio__background .md3-radio__outer-circle {
+    border-color: var(--md-radio-selected-hover-icon-color, var(--md-sys-color-primary, #6750a4))
+}
+
+.md3-radio .md3-radio__native-control:enabled:checked:hover+.md3-radio__background .md3-radio__inner-circle {
+    background-color: var(--md-radio-selected-hover-icon-color, var(--md-sys-color-primary, #6750a4))
+}
+
+.md3-radio .md3-radio__native-control:enabled:checked+.md3-radio__background .md3-radio__outer-circle {
+    border-color: var(--md-radio-selected-icon-color, var(--md-sys-color-primary, #6750a4))
+}
+
+.md3-radio .md3-radio__native-control:enabled:checked+.md3-radio__background .md3-radio__inner-circle {
+    background-color: var(--md-radio-selected-icon-color, var(--md-sys-color-primary, #6750a4))
+}
+
+.md3-radio .md3-radio__native-control:enabled:checked:active+.md3-radio__background .md3-radio__outer-circle {
+    border-color: var(--md-radio-selected-pressed-icon-color, var(--md-sys-color-primary, #6750a4))
+}
+
+.md3-radio .md3-radio__native-control:enabled:checked:active+.md3-radio__background .md3-radio__inner-circle {
+    background-color: var(--md-radio-selected-pressed-icon-color, var(--md-sys-color-primary, #6750a4))
+}
+
+.md3-radio .md3-radio__ripple {
+    block-size: var(--md-radio-state-layer-size, 40px);
+    inline-size: var(--md-radio-state-layer-size, 40px)
+}
+
+.md3-radio .md3-radio__native-control:enabled:not(:checked):focus+.md3-radio__background .md3-radio__outer-circle {
+    border-color: var(--md-radio-unselected-focus-icon-color, var(--md-sys-color-on-surface, #1c1b1f))
+}
+
+.md3-radio .md3-radio__native-control:enabled:not(:checked):hover+.md3-radio__background .md3-radio__outer-circle {
+    border-color: var(--md-radio-unselected-hover-icon-color, var(--md-sys-color-on-surface, #1c1b1f))
+}
+
+.md3-radio .md3-radio__native-control:enabled:not(:checked)+.md3-radio__background .md3-radio__outer-circle {
+    border-color: var(--md-radio-unselected-icon-color, var(--md-sys-color-on-surface-variant, #49454f))
+}
+
+.md3-radio .md3-radio__native-control:enabled:not(:checked):active+.md3-radio__background .md3-radio__outer-circle {
+    border-color: var(--md-radio-unselected-pressed-icon-color, var(--md-sys-color-on-surface, #1c1b1f))
+}
+
+.md3-radio--touch {
+    block-size: var(--md-radio-_touch-target-size, 48px);
+    inline-size: var(--md-radio-_touch-target-size, 48px)
+}
+
+.base-radio[checked] {
+    --md-ripple-hover-state-layer-color: var(--md-radio-selected-hover-state-layer-color, var(--md-sys-color-primary, #6750a4));
+    --md-ripple-focus-state-layer-color: var(--md-radio-selected-focus-state-layer-color, var(--md-sys-color-primary, #6750a4));
+    --md-ripple-pressed-state-layer-color: var(--md-radio-selected-pressed-state-layer-color, var(--md-sys-color-on-surface, #1c1b1f));
+    --md-ripple-hover-state-layer-opacity: var(--md-radio-selected-hover-state-layer-opacity, 0.08);
+    --md-ripple-focus-state-layer-opacity: var(--md-radio-selected-focus-state-layer-opacity, 0.12);
+    --md-ripple-pressed-state-layer-opacity: var(--md-radio-selected-pressed-state-layer-opacity, 0.12)
+}
+
+.md3-radio {
+    display: inline-flex;
+    position: relative;
+    cursor: pointer;
+    will-change: opacity, transform, border-color, color;
+    justify-content: center;
+    align-items: center
+}
+
+.md3-radio__background {
+    display: inline-flex;
+    position: relative;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center
+}
+
+.md3-radio__outer-circle {
+    position: absolute;
+    inset-block-start: 0;
+    inset-inline-start: 0;
+    box-sizing: border-box;
+    block-size: 100%;
+    inline-size: 100%;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 50%;
+    transition: border-color 120ms cubic-bezier(0.4, 0, 0.6, 1)
+}
+
+.md3-radio__inner-circle {
+    position: absolute;
+    box-sizing: border-box;
+    block-size: 50%;
+    inline-size: 50%;
+    transform: scale(0);
+    border-radius: 50%;
+    transition: transform 120ms cubic-bezier(0.4, 0, 0.6, 1), border-color 120ms cubic-bezier(0.4, 0, 0.6, 1)
+}
+
+.md3-radio__ripple {
+    position: absolute;
+    display: inline-flex;
+    z-index: -1
+}
+
+.md3-radio__native-control {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    opacity: 0;
+    cursor: inherit;
+    z-index: 1;
+    block-size: 100%;
+    inline-size: 100%;
+    inset: 0
+}
+
+.md3-radio__native-control:checked+.md3-radio__background,
+.md3-radio__native-control:disabled+.md3-radio__background {
+    transition: opacity 120ms cubic-bezier(0, 0, 0.2, 1), transform 120ms cubic-bezier(0, 0, 0.2, 1)
+}
+
+.md3-radio__native-control:checked+.md3-radio__background .md3-radio__outer-circle,
+.md3-radio__native-control:disabled+.md3-radio__background .md3-radio__outer-circle {
+    transition: border-color 120ms cubic-bezier(0, 0, 0.2, 1)
+}
+
+.md3-radio__native-control:checked+.md3-radio__background .md3-radio__inner-circle,
+.md3-radio__native-control:disabled+.md3-radio__background .md3-radio__inner-circle {
+    transition: transform 120ms cubic-bezier(0, 0, 0.2, 1), border-color 120ms cubic-bezier(0, 0, 0.2, 1)
+}
+
+.md3-radio--disabled {
+    cursor: default;
+    pointer-events: none
+}
+
+.md3-radio__native-control:checked+.md3-radio__background .md3-radio__inner-circle {
+    transform: scale(1);
+    transition: transform 120ms cubic-bezier(0, 0, 0.2, 1), border-color 120ms cubic-bezier(0, 0, 0.2, 1)
+}
+
+.md3-radio__native-control:disabled+.md3-radio__background,
+[aria-disabled=true] .md3-radio__native-control+.md3-radio__background {
+    cursor: default
+}

@@ -1,0 +1,162 @@
+:root {
+  /* Error 0 */
+  --palette-error0: #000000ff;
+  /* Error 10 */
+  --palette-error10: #240f11;
+  /* Error 20 */
+  --palette-error20: #481e22;
+  /* Error 30 */
+  --palette-error30: #6d2c33;
+  /* Error 40 */
+  --palette-error40: #913b44;
+  /* Error 50 */
+  --palette-error50: #b54a55;
+  /* Error 60 */
+  --palette-error60: #c46e77;
+  /* Error 70 */
+  --palette-error70: #f2b8b5ff;
+  /* Error 80 */
+  --palette-error80: #e1b7bb;
+  /* Error 90 */
+  --palette-error90: #f0dbdd;
+  /* Error 95 */
+  --palette-error95: #f8edee;
+  /* Error 99 */
+  --palette-error99: #fefbfc;
+  /* Error 100 */
+  --palette-error100: #ffffffff;
+  /* Tertiary 0 */
+  --palette-tertiary0: #000000ff;
+  /* Tertiary 10 */
+  --palette-tertiary10: #0f2024;
+  /* Tertiary 20 */
+  --palette-tertiary20: #1d3f49;
+  /* Tertiary 30 */
+  --palette-tertiary30: #2c5f6d;
+  /* Tertiary 40 */
+  --palette-tertiary40: #3a7f92;
+  /* Tertiary 50 */
+  --palette-tertiary50: #499fb6;
+  /* Tertiary 60 */
+  --palette-tertiary60: #6db2c5;
+  /* Tertiary 70 */
+  --palette-tertiary70: #92c5d3;
+  /* Tertiary 80 */
+  --palette-tertiary80: #b6d8e2;
+  /* Tertiary 90 */
+  --palette-tertiary90: #dbecf0;
+  /* Tertiary 95 */
+  --palette-tertiary95: #edf5f8;
+  /* Tertiary 99 */
+  --palette-tertiary99: #fbfdfe;
+  /* Tertiary 100 */
+  --palette-tertiary100: #ffffffff;
+  /* Secondary 0 */
+  --palette-secondary0: #000000ff;
+  /* Secondary 10 */
+  --palette-secondary10: #15181e;
+  /* Secondary 20 */
+  --palette-secondary20: #2b303b;
+  /* Secondary 30 */
+  --palette-secondary30: #404859;
+  /* Secondary 40 */
+  --palette-secondary40: #566176;
+  /* Secondary 50 */
+  --palette-secondary50: #6b7994;
+  /* Secondary 60 */
+  --palette-secondary60: #8994a9;
+  /* Secondary 70 */
+  --palette-secondary70: #a6aebf;
+  /* Secondary 80 */
+  --palette-secondary80: #c4c9d4;
+  /* Secondary 90 */
+  --palette-secondary90: #e1e4ea;
+  /* Secondary 95 */
+  --palette-secondary95: #ecf0f9;
+  /* Secondary 99 */
+  --palette-secondary99: #fcfcfd;
+  /* Secondary 100 */
+  --palette-secondary100: #ffffffff;
+  /* Primary 0 */
+  --palette-primary0: #000000ff;
+  /* Primary 10 */
+  --palette-primary10: #0d1626;
+  /* Primary 20 */
+  --palette-primary20: #1a2c4c;
+  /* Primary 30 */
+  --palette-primary30: #264173;
+  /* Primary 40 */
+  --palette-primary40: #335799;
+  /* Primary 50 */
+  --palette-primary50: #406dbf;
+  /* Primary 60 */
+  --palette-primary60: #668acc;
+  /* Primary 70 */
+  --palette-primary70: #8ca7d9;
+  /* Primary 80 */
+  --palette-primary80: #b3c5e5;
+  /* Primary 90 */
+  --palette-primary90: #d9e2f2;
+  /* Primary 95 */
+  --palette-primary95: #ecf0f9;
+  /* Primary 99 */
+  --palette-primary99: #fbfcfe;
+  /* Primary 100 */
+  --palette-primary100: #ffffffff;
+  /* Neutral Variant 0 */
+  --palette-neutral-variant0: #000000ff;
+  /* Neutral Variant 10 */
+  --palette-neutral-variant10: #16171d;
+  /* Neutral Variant 20 */
+  --palette-neutral-variant20: #2c2e3a;
+  /* Neutral Variant 30 */
+  --palette-neutral-variant30: #434556;
+  /* Neutral Variant 40 */
+  --palette-neutral-variant40: #595c73;
+  /* Neutral Variant 50 */
+  --palette-neutral-variant50: #6f7390;
+  /* Neutral Variant 60 */
+  --palette-neutral-variant60: #8c8fa6;
+  /* Neutral Variant 70 */
+  --palette-neutral-variant70: #a9abbc;
+  /* Neutral Variant 80 */
+  --palette-neutral-variant80: #c5c7d3;
+  /* Neutral Variant 90 */
+  --palette-neutral-variant90: #e2e3e9;
+  /* Neutral Variant 95 */
+  --palette-neutral-variant95: #f1f1f4;
+  /* Neutral Variant 99 */
+  --palette-neutral-variant99: #fbfcfe;
+  /* Neutral Variant 100 */
+  --palette-neutral-variant100: #ffffffff;
+  /* Neutral 0 */
+  --palette-neutral0: #000000ff;
+  /* Neutral 10 */
+  --palette-neutral10: #191b1f;
+  /* Neutral 20 */
+  --palette-neutral20: #2b2f36;
+  /* Neutral 30 */
+  --palette-neutral30: #3d434c;
+  /* Neutral 40 */
+  --palette-neutral40: #545b69;
+  /* Neutral 50 */
+  --palette-neutral50: #6b7485;
+  /* Neutral 60 */
+  --palette-neutral60: #858e9d;
+  /* Neutral 70 */
+  --palette-neutral70: #a2a8b4;
+  /* Neutral 80 */
+  --palette-neutral80: #c1c5cd;
+  /* Neutral 90 */
+  --palette-neutral90: #e0e2e6;
+  /* Neutral 95 */
+  --palette-neutral95: #f1f2f4;
+  /* Neutral 99 */
+  --palette-neutral99: #fcfcfd;
+  /* Neutral 100 */
+  --palette-neutral100: #ffffffff;
+  /* Black */
+  --palette-black: #000000ff;
+  /* White */
+  --palette-white: #ffffffff;
+}

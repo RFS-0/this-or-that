@@ -1,0 +1,97 @@
+:root {
+  /* Fully rounded */
+  --shape-corner-full-family: 3px;
+  /* Extra large top rounding */
+  --shape-corner-extra-large-top-family: 1px;
+  --shape-corner-extra-large-top-default-size: 0px;
+  --shape-corner-extra-large-top-top-left: 28px;
+  --shape-corner-extra-large-top-top-right-unit: 1px;
+  --shape-corner-extra-large-top-top-right: 28px;
+  /* Extra large rounding */
+  --shape-corner-extra-large-family: 1px;
+  --shape-corner-extra-large-default-size-unit: 1px;
+  --shape-corner-extra-large-default-size: 28px;
+  /* Large top rounding */
+  --shape-corner-large-top-family: 1px;
+  --shape-corner-large-top-default-size-unit: 1px;
+  --shape-corner-large-top-default-size: 0px;
+  --shape-corner-large-top-top-left-unit: 1px;
+  --shape-corner-large-top-top-left: 16px;
+  --shape-corner-large-top-top-right-unit: 1px;
+  --shape-corner-large-top-top-right: 16px;
+  /* Large end rounding */
+  --shape-corner-large-end-family: 1px;
+  --shape-corner-large-end-default-size-unit: 1px;
+  --shape-corner-large-end-default-size: 0px;
+  --shape-corner-large-end-top-right-unit: 1px;
+  --shape-corner-large-end-top-right: 16px;
+  --shape-corner-large-end-bottom-right-unit: 1px;
+  --shape-corner-large-end-bottom-right: 16px;
+  /* Large rounding */
+  --shape-corner-large-family: 1px;
+  --shape-corner-large-default-size-unit: 1px;
+  --shape-corner-large-default-size: 16px;
+  /* Medium rounding */
+  --shape-corner-medium-family: 1px;
+  --shape-corner-medium-default-size-unit: 1px;
+  --shape-corner-medium-default-size: 12px;
+  /* Small rounding */
+  --shape-corner-small-family: 1px;
+  --shape-corner-small-default-size-unit: 1px;
+  --shape-corner-small-default-size: 8px;
+  /* Extra small top rounding */
+  --shape-corner-extra-small-top-family: 1px;
+  --shape-corner-extra-small-top-default-size-unit: 1px;
+  --shape-corner-extra-small-top-default-size: 0px;
+  --shape-corner-extra-small-top-top-left-unit: 1px;
+  --shape-corner-extra-small-top-top-left: 4px;
+  --shape-corner-extra-small-top-top-right-unit: 1px;
+  --shape-corner-extra-small-top-top-right: 4px;
+  /* Extra small rounding */
+  --shape-corner-extra-small-family: 1px;
+  --shape-corner-extra-small-default-size-unit: 1px;
+  --shape-corner-extra-small-default-size: 4px;
+  /* No rounding */
+  --shape-corner-none-family: 1px;
+  --shape-corner-none-default-size-unit: 1px;
+  --shape-corner-none-default-size: 0px;
+
+  --shape-small: var(--shape-corner-small-default-size);
+  --shape-medium: var(--shape-corner-medium-default-size);
+  --shape-large: var(--shape-corner-large-default-size);
+}
+
+.shape-none {
+  border-radius: var(--shape-corner-none-default-size);
+}
+.shape-extra-small {
+  border-radius: var(--shape-corner-extra-small-default-size);
+}
+.shape-small {
+  border-radius: var(--shape-corner-small-default-size);
+}
+.shape-medium {
+  border-radius: var(--shape-corner-medium-default-size);
+}
+.shape-large {
+  border-radius: var(--shape-corner-large-default-size);
+}
+.shape-extra-large {
+  border-radius: var(--shape-corner-extra-large-default-size);
+}
+.extra-small-top {
+  border-top-left-radius: var(--shape-corner-extra-small-top-top-left);
+  border-top-right-radius: var(--shape-corner-extra-small-top-top-right);
+}
+.large-end {
+  border-top-right-radius: var(--shape-corner-large-end-top-right);
+  border-bottom-right-radius: var(--shape-corner-large-end-bottom-right);
+}
+.large-top {
+  border-top-left-radius: var(--shape-corner-large-top-top-left);
+  border-top-right-radius: var(--shape-corner-large-top-top-right);
+}
+.extra-large-top {
+  border-top-left-radius: var(--shape-corner-extra-large-top-top-left);
+  border-top-right-radius: var(--shape-corner-extra-large-top-top-right);
+}

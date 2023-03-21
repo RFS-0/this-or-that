@@ -5,7 +5,7 @@ export type ButtonContainerProps = {
 }
 
 const ButtonContainer: FlowComponent<ButtonContainerProps> = (props) => {
-  return <div class='flex flex-row-reverse'>{props.children}</div>
+  return <div class='flex'>{props.children}</div>
 }
 
 export { ButtonContainer }

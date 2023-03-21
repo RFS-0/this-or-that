@@ -1,0 +1,159 @@
+.base-icon-button {
+  --_icon-size: var(--md-icon-button-icon-size, 24px);
+  --_state-layer-shape: var(--md-icon-button-state-layer-shape, 9999px);
+  --_state-layer-size: var(--md-icon-button-state-layer-size, 48px);
+
+  --_disabled-icon-color: var(--md-icon-button-disabled-icon-color, rgb(var(--md-sys-color-on-surface-rgb, 28, 27, 31), 0.38));
+
+  --_selected-icon-color: var(--md-icon-button-selected-icon-color, var(--md-sys-color-primary, #6750a4));
+  --_selected-hover-icon-color: var(--md-icon-button-selected-hover-icon-color, var(--md-sys-color-primary, #6750a4));
+  --_selected-focus-icon-color: var(--md-icon-button-selected-focus-icon-color, var(--md-sys-color-primary, #6750a4));
+  --_selected-pressed-icon-color: var(--md-icon-button-selected-pressed-icon-color, var(--md-sys-color-primary, #6750a4));
+
+  --_unselected-icon-color: var(--md-icon-button-unselected-icon-color, var(--md-sys-color-on-surface-variant, #49454f));
+  --_unselected-hover-icon-color: var(--md-icon-button-unselected-hover-icon-color, var(--md-sys-color-on-surface-variant, #49454f));
+  --_unselected-focus-icon-color: var(--md-icon-button-unselected-focus-icon-color, var(--md-sys-color-on-surface-variant, #49454f));
+  --_unselected-pressed-icon-color: var(--md-icon-button-unselected-pressed-icon-color, var(--md-sys-color-on-surface-variant, #49454f));
+
+  --_selected-hover-state-layer-color: var(--md-icon-button-selected-hover-state-layer-color, var(--md-sys-color-primary, #6750a4));
+  --_selected-focus-state-layer-color: var(--md-icon-button-selected-focus-state-layer-color, var(--md-sys-color-primary, #6750a4));
+  --_selected-pressed-state-layer-color: var(--md-icon-button-selected-pressed-state-layer-color, var(--md-sys-color-primary, #6750a4));
+
+  --_unselected-hover-state-layer-color: var(--md-icon-button-unselected-hover-state-layer-color, var(--md-sys-color-on-surface-variant, #49454f));
+  --_unselected-focus-state-layer-color: var(--md-icon-button-unselected-focus-state-layer-color, var(--md-sys-color-on-surface-variant, #49454f));
+  --_unselected-pressed-state-layer-color: var(--md-icon-button-unselected-pressed-state-layer-color, var(--md-sys-color-on-surface-variant, #49454f));
+
+  --_selected-hover-state-layer-opacity: var(--md-icon-button-selected-hover-state-layer-opacity, 0.08);
+  --_selected-focus-state-layer-opacity: var(--md-icon-button-selected-focus-state-layer-opacity, 0.12);
+  --_selected-pressed-state-layer-opacity: var(--md-icon-button-selected-pressed-state-layer-opacity, 0.12);
+
+  --_unselected-focus-state-layer-opacity: var(--md-icon-button-unselected-focus-state-layer-opacity, 0.08);
+  --_unselected-hover-state-layer-opacity: var(--md-icon-button-unselected-hover-state-layer-opacity, 0.08);
+  --_unselected-pressed-state-layer-opacity: var(--md-icon-button-unselected-pressed-state-layer-opacity, 0.12) position: relative;
+  display: inline-flex;
+  outline: none;
+}
+
+.base-icon-button[disabled] {
+  pointer-events: none;
+}
+
+.base-ripple {
+  z-index: -1
+}
+
+.md3-icon-button {
+  align-items: center;
+  border: none;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: flex;
+  fill: currentColor;
+  justify-content: center;
+  outline: none;
+  position: relative;
+  text-decoration: none;
+  user-select: none;
+  z-index: 0;
+  height: var(--_state-layer-size);
+  width: var(--_state-layer-size);
+  font-size: var(--_icon-size);
+  margin: max(0px, (48px - var(--_state-layer-size))/2);
+  border-radius: var(--_state-layer-shape)
+}
+
+.md3-icon-button {
+  align-items: center;
+  border: none;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: flex;
+  fill: currentColor;
+  justify-content: center;
+  outline: none;
+  position: relative;
+  text-decoration: none;
+  user-select: none;
+  z-index: 0;
+  height: var(--_state-layer-size);
+  width: var(--_state-layer-size);
+  font-size: var(--_icon-size);
+  margin: max(0px, (48px - var(--_state-layer-size))/2);
+  border-radius: var(--_state-layer-shape)
+}
+
+.md3-icon-button i,
+.md3-icon-button svg,
+.md3-icon-button img {
+  height: var(--_icon-size);
+  width: var(--_icon-size)
+}
+
+.md3-icon-button i,
+.md3-icon-button svg,
+.md3-icon-button img {
+  display: block
+}
+
+.md3-icon-button--flip-icon .md3-icon-button__icon {
+  transform: scaleX(-1)
+}
+
+.md3-icon-button__icon {
+  display: inline-flex
+}
+
+.md3-icon-button__icon .md3-icon-button__icon--on {
+  display: none
+}
+
+.md3-icon-button--on .md3-icon-button__icon {
+  display: none
+}
+
+.md3-icon-button--on .md3-icon-button__icon.md3-icon-button__icon--on {
+  display: inline-flex
+}
+
+.md3-icon-button__link {
+  height: 100%;
+  outline: none;
+  position: absolute;
+  width: 100%
+}
+
+.md3-icon-button__touch {
+  position: absolute;
+  top: 50%;
+  height: 48px;
+  left: 50%;
+  width: 48px;
+  transform: translate(-50%, -50%)
+}
+
+.md3-icon-button--on:not(:disabled) {
+  color: var(--_selected-icon-color)
+}
+
+.md3-icon-button--on:not(:disabled):hover {
+  color: var(--_selected-hover-icon-color)
+}
+
+.md3-icon-button--on:not(:disabled):focus {
+  color: var(--_selected-focus-icon-color)
+}
+
+.md3-icon-button--on:not(:disabled):active {
+  color: var(--_selected-pressed-icon-color);
+}
+
+@media(forced-colors: active) {
+  .md3-icon-button--on::before {
+    border-color: var(--_unselected-outline-color);
+    border-width: var(--_unselected-outline-width)
+  }
+
+  .md3-icon-button--on:disabled::before {
+    border-color: var(--_disabled-outline-color)
+  }
+}

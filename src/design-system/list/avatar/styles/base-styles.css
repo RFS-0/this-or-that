@@ -1,0 +1,13 @@
+.base-avatar {
+    --_list-item-leading-avatar-color: ;
+    --_list-item-leading-avatar-shape: var(--md-list-list-item-leading-avatar-shape, 9999px);
+    --_list-item-leading-avatar-size: var(--md-list-list-item-leading-avatar-size, 40px)
+}
+
+.md3-list-item__avatar {
+    border-radius: var(--_list-item-leading-avatar-shape);
+    display: inline-flex;
+    height: var(--_list-item-leading-avatar-size);
+    margin-inline-start: 16px;
+    width: var(--_list-item-leading-avatar-size)
+}

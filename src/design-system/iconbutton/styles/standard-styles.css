@@ -1,0 +1,25 @@
+@import 'base-styles.css';
+
+.md3-icon-button--standard {
+  background-color: rgba(0, 0, 0, 0);
+  color: var(--_unselected-icon-color);
+  height: var(--_state-layer-size);
+  width: var(--_state-layer-size);
+  margin: max(0px, (48px - var(--_state-layer-size))/2);
+}
+
+.md3-icon-button--standard:hover {
+  color: var(--_unselected-hover-icon-color)
+}
+
+.md3-icon-button--standard:focus {
+  color: var(--_unselected-focus-icon-color)
+}
+
+.md3-icon-button--standard:active {
+  color: var(--_unselected-pressed-icon-color)
+}
+
+.md3-icon-button--standard:disabled {
+  color: var(--_disabled-icon-color)
+}

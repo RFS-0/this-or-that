@@ -1,0 +1,19 @@
+.display {
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+.display--small {
+  font-size: 36px;
+  line-height: 44px;
+}
+
+.display--medium {
+  font-size: 47px;
+  line-height: 52px;
+}
+
+.display--large {
+  font-size: 57px;
+  line-height: 64px;
+}

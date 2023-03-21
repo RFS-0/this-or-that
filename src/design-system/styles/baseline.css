@@ -1,0 +1,45 @@
+/* @import url(palette.css); */
+/* @import url(typography.css); */
+/* @import url(colors.css); */
+/* @import url(shape.css); */
+/* @import url(motion.css); */
+/* @import url(state.css); */
+/* @import url(elevation.css); */
+/* @import url(theme/light.css); /* screen and (prefers-color-scheme: light); */ */
+/* @import url(theme/dark.css) screen and (prefers-color-scheme: dark); */
+
+:root {
+  --primary: '#264173',
+  --on-primary: '#eff1f6',
+  --inverse-primary: '#b3c5e5',
+  --on-inverse-primary: '#1a2c4c',
+  --primary-container: '#b3c5e5',
+  --on-primary-container: '#1a2c4c',
+  --secondary: '#404859',
+  --on-secondary: '#f0f2f4',
+  --secondary-container: '#c4c9d4',
+  --on-secondary-container: '#404859',
+  --tertiary: '#2c5f6d',
+  --on-tertiary: '#edf5f8',
+  --tertiary-container: '#b6d8e2',
+  --on-tertiary-container: '#1d3f49',
+  --error: '#6d2c33',
+  --on-error: '#f8edee',
+  --error-container: '#e1b7bb',
+  --on-error-container: '#481e22',
+  --warn: '#743825',
+  --on-warn: '#f9efec',
+  --warn-container: '#e6beb2',
+  --on-warn-container: '#481e22',
+  --success: '#4b6237',
+  --on-success: '#f2f6ef',
+  --success-container: '#324125',
+  --background: '#fcfcfd',
+  --on-background: '#191b1f',
+  --surface: '#fbfcfe',
+  --on-surface: '#1a1a1a',
+  --surface-variant: '#e2e3e9',
+  --on-surface-variant: '#434556',
+  --outline: '#6f7390',
+  --outline-variant: '#c5c7d3',
+}

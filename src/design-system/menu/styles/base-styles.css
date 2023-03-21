@@ -1,0 +1,78 @@
+.base-menu {
+    --_cascading-menu-indicator-icon-color: var(--md-menu-cascading-menu-indicator-icon-color, var(--md-sys-color-on-surface-variant, #49454f));
+    --_cascading-menu-indicator-icon-size: var(--md-menu-cascading-menu-indicator-icon-size, 24px);
+    --_container-color: var(--md-menu-container-color, var(--md-sys-color-surface, #fffbfe));
+    --_container-shape: var(--md-menu-container-shape, 4px);
+    --_container-surface-tint-layer-color: var(--md-menu-container-surface-tint-layer-color, var(--md-sys-color-primary, #6750a4));
+    --_divider-color: var(--md-menu-divider-color, var(--md-sys-color-surface-variant, #e7e0ec));
+    --_divider-height: var(--md-menu-divider-height, 1px);
+    --_list-item-container-height: var(--md-menu-list-item-container-height, 48px);
+    --_list-item-disabled-label-text-color: var(--md-menu-list-item-disabled-label-text-color, var(--md-sys-color-on-surface, #1c1b1f));
+    --_list-item-disabled-label-text-opacity: var(--md-menu-list-item-disabled-label-text-opacity, 0.38);
+    --_list-item-focus-label-text-color: var(--md-menu-list-item-focus-label-text-color, var(--md-sys-color-on-surface, #1c1b1f));
+    --_list-item-focus-state-layer-color: var(--md-menu-list-item-focus-state-layer-color, var(--md-sys-color-on-surface, #1c1b1f));
+    --_list-item-focus-state-layer-opacity: var(--md-menu-list-item-focus-state-layer-opacity, 0.12);
+    --_list-item-hover-label-text-color: var(--md-menu-list-item-hover-label-text-color, var(--md-sys-color-on-surface, #1c1b1f));
+    --_list-item-hover-state-layer-color: var(--md-menu-list-item-hover-state-layer-color, var(--md-sys-color-on-surface, #1c1b1f));
+    --_list-item-hover-state-layer-opacity: var(--md-menu-list-item-hover-state-layer-opacity, 0.08);
+    --_list-item-label-text-color: var(--md-menu-list-item-label-text-color, var(--md-sys-color-on-surface, #1c1b1f));
+    --_list-item-label-text-font: var(--md-menu-list-item-label-text-font, Roboto);
+    --_list-item-label-text-line-height: var(--md-menu-list-item-label-text-line-height, 1.25rem);
+    --_list-item-label-text-size: var(--md-menu-list-item-label-text-size, 0.875rem);
+    --_list-item-label-text-tracking: var(--md-menu-list-item-label-text-tracking, 0.006rem);
+    --_list-item-label-text-type: var(--md-menu-list-item-label-text-type, 500 0.875rem / 1.25rem Roboto);
+    --_list-item-label-text-weight: var(--md-menu-list-item-label-text-weight, 500);
+    --_list-item-pressed-label-text-color: var(--md-menu-list-item-pressed-label-text-color, var(--md-sys-color-on-surface, #1c1b1f));
+    --_list-item-pressed-state-layer-color: var(--md-menu-list-item-pressed-state-layer-color, var(--md-sys-color-on-surface, #1c1b1f));
+    --_list-item-pressed-state-layer-opacity: var(--md-menu-list-item-pressed-state-layer-opacity, 0.12);
+    --_list-item-selected-container-color: var(--md-menu-list-item-selected-container-color, var(--md-sys-color-surface-variant, #e7e0ec));
+    --_list-item-with-leading-icon-disabled-leading-icon-color: var(--md-menu-list-item-with-leading-icon-disabled-leading-icon-color, var(--md-sys-color-on-surface, #1c1b1f));
+    --_list-item-with-leading-icon-disabled-leading-icon-opacity: var(--md-menu-list-item-with-leading-icon-disabled-leading-icon-opacity, 0.38);
+    --_list-item-with-leading-icon-focus-icon-color: var(--md-menu-list-item-with-leading-icon-focus-icon-color, var(--md-sys-color-on-surface-variant, #49454f));
+    --_list-item-with-leading-icon-hover-icon-color: var(--md-menu-list-item-with-leading-icon-hover-icon-color, var(--md-sys-color-on-surface-variant, #49454f));
+    --_list-item-with-leading-icon-leading-icon-color: var(--md-menu-list-item-with-leading-icon-leading-icon-color, var(--md-sys-color-on-surface-variant, #49454f));
+    --_list-item-with-leading-icon-leading-icon-size: var(--md-menu-list-item-with-leading-icon-leading-icon-size, 24px);
+    --_list-item-with-leading-icon-pressed-icon-color: var(--md-menu-list-item-with-leading-icon-pressed-icon-color, var(--md-sys-color-on-surface-variant, #49454f));
+    --_list-item-with-trailing-icon-disabled-trailing-icon-color: var(--md-menu-list-item-with-trailing-icon-disabled-trailing-icon-color, var(--md-sys-color-on-surface, #1c1b1f));
+    --_list-item-with-trailing-icon-disabled-trailing-icon-opacity: var(--md-menu-list-item-with-trailing-icon-disabled-trailing-icon-opacity, 0.38);
+    --_list-item-with-trailing-icon-focus-icon-color: var(--md-menu-list-item-with-trailing-icon-focus-icon-color, var(--md-sys-color-on-surface-variant, #49454f));
+    --_list-item-with-trailing-icon-hover-icon-color: var(--md-menu-list-item-with-trailing-icon-hover-icon-color, var(--md-sys-color-on-surface-variant, #49454f));
+    --_list-item-with-trailing-icon-pressed-icon-color: var(--md-menu-list-item-with-trailing-icon-pressed-icon-color, var(--md-sys-color-on-surface-variant, #49454f));
+    --_list-item-with-trailing-icon-trailing-icon-color: var(--md-menu-list-item-with-trailing-icon-trailing-icon-color, var(--md-sys-color-on-surface-variant, #49454f));
+    --_list-item-with-trailing-icon-trailing-icon-size: var(--md-menu-list-item-with-trailing-icon-trailing-icon-size, 24px);
+    --_container-elevation-shadow: var(--md-menu-container-elevation-shadow, 0px 1px 2px 0px rgb(var(--md-sys-color-shadow-rgb, 0, 0, 0), 0.3), 0px 2px 6px 2px rgb(var(--md-sys-color-shadow-rgb, 0, 0, 0), 0.15));
+    --_container-elevation-overlay-opacity: var(--md-menu-container-elevation-overlay-opacity, 0.08)
+}
+
+.md3-menu {
+    --md-menu-surface-container-elevation-shadow: var(--_container-elevation-shadow);
+    --md-menu-surface-container-shape: var(--_container-shape);
+    --md-list-container-color: var(--_container-color);
+    --md-list-container-surface-tint-layer-color: var(--_container-surface-tint-layer-color);
+    --md-list-container-elevation-overlay-opacity: var(--_container-elevation-overlay-opacity);
+    --md-list-list-item-container-color: var(--_container-color);
+    --md-list-list-item-one-line-container-height: var(--_list-item-container-height);
+    --md-list-list-item-disabled-label-text-color: var(--_list-item-disabled-label-text-color);
+    --md-list-list-item-disabled-label-text-opacity: var(--_list-item-disabled-label-text-opacity);
+    --md-list-list-item-hover-label-text-color: var(--_list-item-hover-label-text-color);
+    --md-list-list-item-hover-state-layer-color: var(--_list-item-hover-state-layer-color);
+    --md-list-list-item-hover-state-layer-opacity: var(--_list-item-hover-state-layer-opacity);
+    --md-list-list-item-label-text-color: var(--_list-item-label-text-color);
+    --md-list-list-item-label-text-font: var(--_list-item-label-text-font);
+    --md-list-list-item-label-text-line-height: var(--_list-item-label-text-line-height);
+    --md-list-list-item-label-text-size: var(--_list-item-label-text-size);
+    --md-list-list-item-label-text-tracking: var(--_list-item-label-text-tracking);
+    --md-list-list-item-label-text-weight: var(--_list-item-label-text-tracking);
+    --md-list-list-item-disabled-leading-icon-color: var(--_list-item-with-leading-icon-disabled-leading-icon-color);
+    --md-list-list-item-disabled-leading-icon-opacity: var(--_list-item-with-leading-icon-disabled-leading-icon-opacity);
+    --md-list-list-item-hover-leading-icon-color: var(--_list-item-with-leading-icon-hover-icon-color);
+    --md-list-list-item-leading-icon-color: var(--_list-item-with-leading-icon-leading-icon-color);
+    --md-list-list-item-leading-icon-size: var(--_list-item-with-leading-icon-leading-icon-size);
+    --md-list-list-item-disabled-trailing-icon-color: var(--_list-item-with-trailing-icon-disabled-trailing-icon-color);
+    --md-list-list-item-disabled-trailing-icon-opacity: var(--_list-item-with-trailing-icon-disabled-trailing-icon-opacity);
+    --md-list-list-item-hover-trailing-icon-color: var(--_list-item-with-trailing-icon-hover-icon-color);
+    --md-list-list-item-trailing-icon-color: var(--_list-item-with-trailing-icon-trailing-icon-color);
+    --md-list-list-item-trailing-icon-size: var(--_list-item-with-leading-icon-trailing-icon-size);
+  position: relative;
+}
+

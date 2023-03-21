@@ -1,0 +1,61 @@
+:root {
+  color-scheme: dark;
+  /* Surface tint */
+  --color-surface-tint: var(--color-primary);
+  /* Surface tint color */
+  --color-surface-tint-color: var(--color-primary);
+  /* On error container */
+  --color-on-error-container: var(--palette-error80);
+  /* On error */
+  --color-on-error: var(--palette-error20);
+  /* Error container */
+  --color-error-container: var(--palette-error30);
+  /* On tertiary container */
+  --color-on-tertiary-container: var(--palette-tertiary90);
+  /* On tertiary */
+  --color-on-tertiary: var(--palette-tertiary20);
+  /* Tertiary container */
+  --color-tertiary-container: var(--palette-tertiary30);
+  /* Tertiary */
+  --color-tertiary: var(--palette-tertiary80);
+  /* Shadow */
+  --color-shadow: var(--palette-neutral0);
+  /* Error */
+  --color-error: var(--palette-error80);
+  /* Outline */
+  --color-outline: var(--palette-neutral-variant60);
+  /* On background */
+  --color-on-background: var(--palette-neutral90);
+  /* Background */
+  --color-background: var(--palette-neutral10);
+  /* Inverse on surface */
+  --color-inverse-on-surface: var(--palette-neutral20);
+  /* Inverse surface */
+  --color-inverse-surface: var(--palette-neutral90);
+  /* On surface variant */
+  --color-on-surface-variant: var(--palette-neutral-variant80);
+  /* On surface */
+  --color-on-surface: var(--palette-neutral90);
+  /* Surface Variant */
+  --color-surface-variant: var(--palette-neutral-variant30);
+  /* Surface */
+  --color-surface: var(--palette-neutral10);
+  /* On secondary container */
+  --color-on-secondary-container: var(--palette-secondary90);
+  /* On secondary */
+  --color-on-secondary: var(--palette-secondary20);
+  /* Secondary container */
+  --color-secondary-container: var(--palette-secondary30);
+  /* Secondary */
+  --color-secondary: var(--palette-secondary80);
+  /* Inverse primary */
+  --color-inverse-primary: var(--palette-primary40);
+  /* On primary container */
+  --color-on-primary-container: var(--palette-primary90);
+  /* On primary */
+  --color-on-primary: var(--palette-primary20);
+  /* Primary container */
+  --color-primary-container: var(--palette-primary30);
+  /* Primary */
+  --color-primary: var(--palette-primary80);
+}

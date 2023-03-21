@@ -1,0 +1,11 @@
+.base-list-divider {
+    --_list-divider-color: var(--md-list-divider-list-divider-color, #c4c7c5);
+    --_list-divider-height: var(--md-list-divider-list-divider-height, 1px)
+}
+
+.md3-list__divider {
+    background-clip: content-box;
+    background-color: var(--_list-divider-color);
+    height: var(--_list-divider-height);
+    padding: 0
+}

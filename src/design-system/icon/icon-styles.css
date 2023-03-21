@@ -1,0 +1,35 @@
+.base-icon {
+  --_color: var(--md-icon-color, inherit);
+  --_font: var(--md-icon-font, "Material Icons");
+  --_font-variation-settings: var(--md-icon-font-variation-settings, inherit);
+  --_size: var(--md-icon-size, 24px);
+  --_weight: var(--md-icon-weight, 400);
+  display:inline-flex;
+  align-items: center;
+  justify-content: center;
+  color:var(--_color);
+  font-family:var(--_font);
+  font-weight:var(--_weight);
+  font-style:normal;
+  font-size:var(--_size);
+  font-variation-settings:var(--_font-varation-settings);
+  line-height:1;
+  letter-spacing:normal;
+  text-transform:none;
+  white-space:nowrap;
+  word-wrap:normal;
+  direction:ltr;
+  -webkit-font-smoothing:antialiased;
+  text-rendering:optimizeLegibility;
+  -moz-osx-font-smoothing:grayscale
+}
+
+.base-icon--on-primary {
+  color:var(--md-sys-color-on-primary);
+}
+
+.base-icon span svg {
+    fill: currentColor;
+    height: var(--_size);
+    width: var(--_size);
+}

@@ -1,0 +1,46 @@
+:root {
+  /* Surface tint color */
+  --elevation-surface-tint-color: var(--color-primary);
+  /* +5 */
+  --elevation-level5-value: 12px;
+  --elevation-level5-unit: 1px;
+  --elevation-level5: 12px;
+  /* +4 */
+  --elevation-level4-value: 8px;
+  --elevation-level4-unit: 1px;
+  --elevation-level4: 8px;
+  /* +3 */
+  --elevation-level3-value: 6px;
+  --elevation-level3-unit: 1px;
+  --elevation-level3: 6px;
+  /* +2 */
+  --elevation-level2-value: 3px;
+  --elevation-level2-unit: 1px;
+  --elevation-level2: 3px;
+  /* +1 */
+  --elevation-level1-value: 1px;
+  --elevation-level1-unit: 1px;
+  --elevation-level1: 1px;
+  /* 0 */
+  --elevation-level0-value: 0px;
+  --elevation-level0-unit: 1px;
+  --elevation-level0: 0px;
+}
+.elevation-0 {
+  box-shadow: var(--elevation-level0);
+}
+.elevation-1 {
+  box-shadow: var(--elevation-level1);
+}
+.elevation-2 {
+  box-shadow: var(--elevation-level2);
+}
+.elevation-3 {
+  box-shadow: var(--elevation-level3);
+}
+.elevation-4 {
+  box-shadow: var(--elevation-level4);
+}
+.elevation-5 {
+  box-shadow: var(--elevation-level5);
+}

@@ -1,4 +1,5 @@
 import { Component } from 'solid-js'
+import { FilledTextField } from '../../../design-system'
 
 export type TextInputCellProps = {
   id: string
@@ -8,30 +9,17 @@ export type TextInputCellProps = {
 }
 
 const TextInputCell: Component<TextInputCellProps> = (props) => {
-  const enterText = (
-    textInput: Event & {
-      currentTarget: HTMLInputElement
-      target: Element
-    }
-  ) => {
-    props.onTextEntered(textInput.currentTarget.value)
+  const enterText = (e: Event & { target: HTMLInputElement }) => {
+    props.onTextEntered(e.target.value)
   }
 
   return (
-    <td>
-      <input
+    <td class="p-f6">
+      <FilledTextField
         type='text'
-        id={props.id}
         onChange={enterText}
         name={props.name || ''}
         value={props.value || ''}
-        class='mt-1
-               block
-               w-full
-               rounded-md
-               bg-gray-100
-               border-transparent
-               focus:border-gray-500 focus:bg-white focus:ring-0'
       />
     </td>
   )
