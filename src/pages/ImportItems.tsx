@@ -116,9 +116,9 @@ export default (_: ImportItemsProps) => {
                   <table class="border-collapse min-w-full max-w-full divide-y divide-outline-variant">
                     <thead class="bg-outline-variant">
                       <tr>
-                        <th scope="col" class="p-f6 text-left text-xs font-medium text-on-surface-variant uppercase">Title</th>
-                        <th scope="col" class="p-f6 text-left text-xs font-medium text-on-surface-variant uppercase">Description</th>
-                        <th scope="col" class="p-f6 text-left text-xs font-medium text-on-surface-variant uppercase">Action</th>
+                        <th scope="col" class="p-f6 text-left text-on-surface-variant">Title</th>
+                        <th scope="col" class="p-f6 text-left text-on-surface-variant">Description</th>
+                        <th scope="col" class="p-f6 text-left text-on-surface-variant">Action</th>
                       </tr>
                     </thead>
                     <tbody class="divide-y divide-outline-variant ">
