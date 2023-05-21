@@ -1,18 +1,19 @@
+import { useNavigate } from "@solidjs/router"
 import { createEffect, createSignal, For, Show } from "solid-js"
 import { useApplicationContext } from "../AppContext"
-import { ComponentTitle } from "../components/layout/component/ComponentTitle"
-import { PageTitle } from "../components/layout/page/PageTitle"
-import { Button } from "../components/shared/forms/Button"
-import { ButtonCell } from "../components/shared/forms/ButtonCell"
-import { FormRow } from "../components/shared/forms/FormRow"
-import { TextInputCell } from "../components/shared/forms/TextInputCell"
+import { Card, CardActions, CardBody, CardDescription, CardHeader } from "../components/shared"
+import { CardStep } from "../components/shared/CardStep"
+import { Page } from "../components/shared/Page"
+import { Icon, List, ListDivider, ListIcon, ListItem, Title, TonalButton } from "../design-system"
 
 export default () => {
   const [applicationContext] = useApplicationContext()
+  const navigate = useNavigate()
 
-  const [intendedItems, setIntendedItems] = applicationContext.unsortedItems
-  const [unsortedItems, setUnsortedItems] = applicationContext.unsortedItems
-  const [sortedItems, setSortedItems] = applicationContext.sortedItems
+  const [unsortedItems, setUnsortedItems] = createSignal(applicationContext.unsortedItems[0]().slice())
+
+  const sizeSignal = createSignal<'small' | 'large'>('large')
+  const [size] = sizeSignal
 
   const getNextUnsortedItem = () => {
     return unsortedItems().shift()
@@ -38,129 +39,123 @@ export default () => {
   })
 
   return (
-    <>
-      <div class="flex flex-col gap-6 p-4">
-        <PageTitle>Prioritize the items</PageTitle>
-        <div>
-          <h2>Basic idea</h2>
-          <ol class="list-inside list-decimal">
-            <li>Two random unprioritized items are displayed</li>
-            <li>The user can order them by their relative priority</li>
-            <li>Prioritization can be completed</li>
-          </ol>
-        </div>
+    <Page>
+      <Card size={size()}>
+        <CardHeader
+          title={'Prioritize the items'}
+          size={sizeSignal}
+        />
 
-        <div>
-          <ComponentTitle>Unprioritized items</ComponentTitle>
-          <p>Select the next item you would like to prioritize</p>
-          <ul>
-            <For each={unsortedItems()}>
-              {(unsortedItem) => (<li>{unsortedItem.title}</li>)}
-            </For>
-          </ul>
-        </div>
+        <CardBody>
+          <CardDescription
+            description="
+            You can now prioritize your items. 
+            You can choose which item is prioritized next, per default the first item is selected.
+            You then define the priority of the selected item in relation to already prioritized items."
+          />
 
-        <div>
-          <ComponentTitle>Prioritize items</ComponentTitle>
-          <p>Prioritize the following items by ranking them by priority. Highest priority should be frist item, the lowest priority item should be last in the list</p>
-          <ol class="list-inside list-decimal">
-            <For each={itemsBeingSorted()}>
-              {item => (
-                <Show when={item !== undefined}>
-
-                  <li>{JSON.stringify(item!.title)}</li>
-                </Show>
-              )}
-            </For>
-          </ol>
-          <Button
-            onClick={() => {
-              console.log('priority confirmed')
-            }}
-          >
-            Confirm priority
-          </Button>
-        </div>
-
-        <FormRow>
-          <table class=' w-full'>
-            <thead>
-              <tr>
-                <th class='px-5 py-3 bg-indigo-200 text-left font-semibold rounded-l'>
-                  Titel
-                </th>
-                <th class='px-5 py-3 bg-indigo-200 text-left font-semibold'>
-                  Beschreibung
-                </th>
-                <th class='px-5 py-3 bg-indigo-200 text-left font-semibold rounded-r'>
-                  Aktionen
-                </th>
-              </tr>
-            </thead>
-            <tbody>
-              <For each={intendedItems()}>
-                {(intendedItem) => (
-                  <tr>
-                    <TextInputCell
-                      id={`${intendedItem.id}-title`}
-                      value={intendedItem.title}
-                      onTextEntered={(title) =>
-                        console.log(title)
-                      }
-                    ></TextInputCell>
-                    <TextInputCell
-                      id={`${intendedItem.id}-description`}
-                      value={intendedItem.description}
-                      onTextEntered={(description) =>
-                        console.log(description)
-                      }
-                    ></TextInputCell>
-                    <ButtonCell id={`remove-${intendedItem.id}`}>
-                      <Button onClick={
-                        () => console.log('remove')
-                      }>
-                        Entfernen
-                      </Button>
-                    </ButtonCell>
-                  </tr>
-                )}
-              </For>
-              <tr>
-                <TextInputCell
-                  id={`-title`}
-                  value={'title'}
-                  onTextEntered={(title) => console.log(title)
+          <CardStep>
+            <div
+              class={
+                `w-full 
+                 flex 
+                 flex-col
+                 overflow-x-auto
+                 items-center 
+                 surface-2 
+                 sm:p-f5 
+                 md:p-f6 
+                 lg:p-f7 
+                 sm:gap-f5 
+                 md:gap-f6 
+                 lg:gap-f7`
+              }
+            >
+              <Title size="medium">Unprioritized items</Title>
+              <List variant="surface3">
+                <For each={unsortedItems()}>
+                  {
+                    (unsortedItem, index) => (
+                      <>
+                        <ListItem
+                          variant="surface3"
+                          headline={unsortedItem.title}
+                          multiLineSupportingText={unsortedItem.description}
+                          end={
+                            <ListIcon icon={'chevron_right'} />
+                          }
+                        />
+                        <Show when={index() < unsortedItems().length - 1}>
+                          <ListDivider />
+                        </Show>
+                      </>
+                    )
                   }
-                ></TextInputCell>
-                <TextInputCell
-                  id={`-title`}
-                  value={''}
-                  onTextEntered={(description) => console.log('description')}
-                ></TextInputCell>
-                <ButtonCell id='add-item'>
-                  <Button
-                    onClick={() => {
-                      console.log('add item')
-                    }}
-                  >
-                    Hinzufügen
-                  </Button>
-                </ButtonCell>
-              </tr>
-            </tbody>
-          </table>
-        </FormRow>
+                </For>
+              </List>
+            </div>
 
-        <div>
-          <ComponentTitle>Prioritized items</ComponentTitle>
-          <p>This is the current prioritization of you items:</p>
-          <ul>
-            <For each={sortedItems()}>
-              {(unsortedItem) => (<li>{unsortedItem.id}</li>)}
-            </For>
-          </ul>
-        </div>
-      </div>
-    </>
+            <Title size="medium">Prioritize items</Title>
+            <List variant="surface3">
+              <For each={itemsBeingSorted()}>
+                {
+                  (itemBeingSorted, index) => (
+                    <Show when={itemBeingSorted !== undefined}>
+                      <ListItem
+                        variant="surface3"
+                        headline={itemBeingSorted!.title}
+                        multiLineSupportingText={itemBeingSorted!.description}
+                        start={
+                          <ListIcon icon={'arrow_upward'} />
+                        }
+                        end={
+                          <ListIcon icon={'arrow_downward'} />
+                        }
+                      />
+                      <Show when={index() < itemsBeingSorted().filter(item => !!item).length - 1}>
+                        <ListDivider />
+                      </Show>
+                    </Show>
+                  )
+                }
+              </For>
+            </List>
+
+            <TonalButton
+              color='primary-container'
+              label='Confirm priority'
+              leadingIcon={
+                <Icon><span class="material-symbols-outlined">done</span></Icon>
+              }
+              onClick={() => {
+              }}
+            />
+          </CardStep>
+        </CardBody>
+
+        <CardActions>
+          <TonalButton
+            label='Continue'
+            color='primary'
+            leadingIcon={
+              <Icon><span class="material-symbols-outlined">arrow_forward</span></Icon>
+            }
+            onClick={() => {
+              navigate('/prioritize')
+            }}
+          />
+          <TonalButton
+            label='Back'
+            color='primary'
+            leadingIcon={
+              <Icon><span class="material-symbols-outlined">arrow_back</span></Icon>
+            }
+            onClick={() => {
+              navigate('/import')
+            }}
+          />
+        </CardActions>
+      </Card>
+    </Page>
   )
 }

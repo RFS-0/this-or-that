@@ -1,10 +1,34 @@
 .base-list {
     --_container-color: var(--md-list-container-color, #fff);
-    --_list-divider-color: var(--md-list-list-divider-color, #c4c7c5);
+    --_list-divider-color: var(--md-sys-color-on-surface);
     --_list-divider-height: var(--md-list-list-divider-height, 1px);
     --_container-surface-tint-layer-color: var(--md-list-container-surface-tint-layer-color, var(--md-sys-color-primary, #6750a4));
     --_container-elevation-overlay-opacity: var(--md-list-container-elevation-overlay-opacity, 0);
     color: unset
+}
+
+.md3-list.md3-list--surface {
+  --_container-color:  var(--md-sys-color-surface);
+}
+
+.md3-list.md3-list--surface1 {
+  background-color: var(--md-sys-color-surface);
+  background: linear-gradient(0deg, rgba(var(--md-sys-color-primary-rgb), 0.05), rgba(var(--md-sys-color-primary-rgb), 0.05)), var(--md-sys-color-surface);
+}
+
+.md3-list.md3-list--surface2 {
+  background-color: var(--md-sys-color-surface);
+  background: linear-gradient(0deg, rgba(var(--md-sys-color-primary-rgb), 0.08), rgba(var(--md-sys-color-primary-rgb), 0.08)), var(--md-sys-color-surface);
+}
+
+.md3-list.md3-list--surface3 {
+  background-color: var(--md-sys-color-surface);
+  background: linear-gradient(0deg, rgba(var(--md-sys-color-primary-rgb), 0.11), rgba(var(--md-sys-color-primary-rgb), 0.11)), var(--md-sys-color-surface);
+}
+
+.md3-list.md3-list--surface4 {
+  background-color: var(--md-sys-color-surface);
+  background: linear-gradient(0deg, rgba(var(--md-sys-color-primary-rgb), 0.12), rgba(var(--md-sys-color-primary-rgb), 0.12)), var(--md-sys-color-surface);
 }
 
 .md3-list {
@@ -20,7 +44,7 @@
     --md-list-divider-list-divider-height: var(--_list-divider-height)
 }
 
-.md3-list .md3-elevation-overlay {
+.md3-list.md3-elevation-overlay {
     position: absolute;
     inset: 0;
     border-radius: inherit;

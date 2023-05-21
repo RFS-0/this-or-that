@@ -91,6 +91,29 @@
     background-color: var(--_list-item-container-color);
     border-radius: var(--_list-item-container-shape)
 }
+.md3-list-item.md3-list-item--surface {
+    --_list-item-container-color: var(--md-sys-color-surface);
+}
+
+.md3-list-item.md3-list-item--surface1 {
+  background-color: var(--md-sys-color-surface);
+  background: linear-gradient(0deg, rgba(var(--md-sys-color-primary-rgb), 0.05), rgba(var(--md-sys-color-primary-rgb), 0.05)), var(--md-sys-color-surface);
+}
+
+.md3-list-item.md3-list-item--surface2 {
+  background-color: var(--md-sys-color-surface);
+  background: linear-gradient(0deg, rgba(var(--md-sys-color-primary-rgb), 0.08), rgba(var(--md-sys-color-primary-rgb), 0.08)), var(--md-sys-color-surface);
+}
+
+.md3-list-item.md3-list-item--surface3 {
+  background-color: var(--md-sys-color-surface);
+  background: linear-gradient(0deg, rgba(var(--md-sys-color-primary-rgb), 0.11), rgba(var(--md-sys-color-primary-rgb), 0.11)), var(--md-sys-color-surface);
+}
+
+.md3-list-item.md3-list-item--surface4 {
+  background-color: var(--md-sys-color-surface);
+  background: linear-gradient(0deg, rgba(var(--md-sys-color-primary-rgb), 0.12), rgba(var(--md-sys-color-primary-rgb), 0.12)), var(--md-sys-color-surface);
+}
 
 .md3-list-item.md3-list-item--enabled {
     cursor: pointer
@@ -228,6 +251,3 @@
 .base-list-item .md3-ripple-surface {
     border-radius: 0
 }
-
-
-

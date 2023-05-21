@@ -4,6 +4,7 @@ import { activateListItem, deactivateListItem, isListItemActive, ListItemProps }
 import './styles/base-styles.css'
 
 export type ListProps = {
+  variant?: 'surface' | 'surface1' | 'surface2' | 'surface3' | 'surface4'
   role?: 'list' | 'menu';
   ariaLabel?: string;
   listTabIndex?: number;
@@ -92,9 +93,10 @@ export const List = (props: ListProps) => {
       ref={list}
       class={
         `
-            base-list
-            md3-list
-            `
+        base-list
+        md3-list
+        ${!!props.variant ? 'md3-list--' + props.variant : 'md3-list--surface'}
+        `
       }
       id={listId}
       tabindex={listTabIndex}

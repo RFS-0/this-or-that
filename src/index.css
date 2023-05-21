@@ -53,7 +53,6 @@ ul {
   --md-sys-color-outline-variant: #c5c7d3;
   --md-sys-color-scrim: #000000;
   --md-sys-color-surface: #FBFCFE;
-  --md-sys-color-surface-1: #FBFCFE;
 }
 
 .surface {
@@ -62,13 +61,13 @@ ul {
 
 .surface-1 {
   background-color: var(--md-sys-color-surface);
-  background: linear-gradient(0deg, rgba(var(--md-sys-color-primary-rgb), 0.05), rgba(var(--md-sys-color-primary-rgb), 0.05)), var(--md-sys-color-surface-1);
+  background: linear-gradient(0deg, rgba(var(--md-sys-color-primary-rgb), 0.05), rgba(var(--md-sys-color-primary-rgb), 0.05)), var(--md-sys-color-surface);
   border-radius: 12px;
 }
 
 .surface-2 {
   background-color: var(--md-sys-color-surface);
-  background: linear-gradient(0deg, rgba(var(--md-sys-color-primary-rgb), 0.08), rgba(var(--md-sys-color-primary-rgb), 0.08)), var(--md-sys-color-surface-1);
+  background: linear-gradient(0deg, rgba(var(--md-sys-color-primary-rgb), 0.08), rgba(var(--md-sys-color-primary-rgb), 0.08)), var(--md-sys-color-surface);
   border-radius: 12px;
 }
 

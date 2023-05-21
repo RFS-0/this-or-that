@@ -17,6 +17,7 @@ export function activateListItem(item: HTMLLIElement) {
 }
 
 export type ListItemProps = {
+  variant?: 'surface' | 'surface1' | 'surface2' | 'surface3' | 'surface4'
   onClick?: (ev: MouseEvent) => void
   itemId?: string
   tabIndex?: number
@@ -56,6 +57,7 @@ export const ListItem = (props: ListItemProps) => {
         `
         base-list-item
         md3-list-item
+        ${!!props.variant ? 'md3-list-item--' + props.variant : 'md3-list-item--surface'}
         ${numberOfLines() === 1 ? 'md3-list-item--with-one-line' : ''}
         ${numberOfLines() === 2 ? 'md3-list-item--with-two-line' : ''}
         ${numberOfLines() === 3 ? 'md3-list-item--with-three-line' : ''}
