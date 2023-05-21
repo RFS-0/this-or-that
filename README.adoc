@@ -1,34 +1,37 @@
-## Usage
+= This Or That
 
-Those templates dependencies are maintained via [pnpm](https://pnpm.io) via `pnpm up -Lri`.
+The goal of this application is to help you prioritize any list of unprioritized items by comparing them to each other.
+This could be anything from a list of tasks to a list of movies you want to watch.
 
-This is the reason you see a `pnpm-lock.yaml`. That being said, any package manager will work. This file can be safely be removed once you clone a template.
+== How to run
 
-```bash
-$ npm install # or pnpm install or yarn install
-```
+Checkout `package.json` for the available commands.
+For development use and go to http://localhost:3000/import
 
-### Learn more on the [Solid Website](https://solidjs.com) and come chat with us on our [Discord](https://discord.com/invite/solidjs)
+    npm run dev
 
-## Available Scripts
+== How to use
 
-In the project directory, you can run:
+1. Add a list of items you want to prioritize. (Screen 1)
+2. Compare two items at a time and choose which one is more important to you. (Screen 2, not the final design)
+3. Repeat step 2 until you have compared all items.
+4. View the results of your comparisons.
 
-### `npm dev` or `npm start`
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+=== Screen 1
 
-The page will reload if you make edits.<br>
+image::./doc/assets/images/step_1.png[]
 
-### `npm run build`
+=== Screen 2
 
-Builds the app for production to the `dist` folder.<br>
-It correctly bundles Solid in production mode and optimizes the build for the best performance.
+image::./doc/assets/images/step_2.png[]
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+=== Open Tasks
 
-## Deployment
-
-You can deploy the `dist` folder to any static host provider (netlify, surge, now, etc.)
+. Figure out an optimal way to compare items (functionality only, no UI design yet)
+.. Should probably make use of an optimal sorting algorithm which ideally allows to configure the number of items being compared at a time
+.. The number of comparisons needed to get a prioritized list of all items should be minimized
+. Design the UI for the prioritization screen
+. Implement the UI for the prioritization  screen
+. Design the UI for the export screen
+. Implement the UI for the export screen
