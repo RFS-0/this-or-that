@@ -4,6 +4,7 @@
   "version": "0.0.0",
   "description": "",
   "scripts": {
+    "sort": "node sort.js",
     "start": "vite",
     "dev": "vite",
     "build": "vite build",
